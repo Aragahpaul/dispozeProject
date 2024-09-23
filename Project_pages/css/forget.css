@@ -1,0 +1,217 @@
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.header {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+}
+
+/* Grid layout for the navbar */
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+/* Logo on the left */
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  /* margin-left: -13rem !important; Adjust as needed */
+  justify-self: start;
+  margin-left: 2rem !important;
+}
+
+/* Center the nav items */
+.mx-auto {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  /* margin-right: 100rem; */
+  padding: 0;
+}
+
+/* Login and Sign Up on the right */
+.ml-auto {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  /* margin: -12rem !important; */
+  padding: 0;
+}
+
+.nav-link {
+  color: #000 !important;
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+.nav-link.text-success {
+  color: #28a745 !important;
+  border-bottom: none !important;
+}
+
+.nav-link.text-success:hover {
+  color: #28a745 !important;
+}
+
+.nav-link:hover {
+  color: #28a745 !important;
+  border-bottom: 3px solid #28a745;
+}
+
+.btn-success {
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+/* OTP Input Styles */
+.otp-input {
+  width: 55px; /* Slightly reduced width */
+  height: 55px; /* Slightly reduced height */
+  font-size: 13px; /* Slightly smaller font size */
+  border-radius: 3px; /* Slightly sharper edges */
+  border: 1px solid #ced4da;
+  margin-top: 1rem;
+}
+
+.otp-input:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+#reset-btn {
+  background-color: #17a100;
+  color: white;
+  border: none;
+  padding: 5px 20px; /* Maintain padding for a thinner button */
+  border-radius: 5px;
+  font-size: 14px; /* Maintain font size */
+  height: 37px; /* Set height to make the button thinner */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%; /* Ensure the button takes up the full width of its container */
+  max-width: 400px; /* Restrict the maximum width */
+  display: inline-block;
+  margin-top: 2rem; /* Reduce margin-top for better mobile positioning */
+}
+
+#reset-btn.enabled {
+  background-color: #17a100;
+  border-color: #17a100;
+  cursor: pointer;
+}
+
+/* Hide the header for mobile screens */
+@media (max-width: 767px) {
+  .header {
+    display: none;
+  }
+
+  .text-center {
+    font-size: 14px;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .text-center strong {
+    white-space: normal;
+    font-weight: bold;
+  }
+
+  h3.text-center {
+    font-size: 24px;
+    margin-bottom: 40px;
+  }
+
+  #reset-btn {
+    padding: 12px;
+    font-size: 1rem;
+    display: block;
+    margin: 20px auto 0 auto;
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+/* Grid layout and navbar styling for larger screens */
+@media only screen and (min-width: 1280px) and (orientation: landscape) {
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-left: -7rem; /* Adjust as needed */
+    justify-self: start;
+  }
+
+  .mx-auto {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin-left: -10rem; /* Adjust as needed */
+    padding: 0;
+  }
+}
+
+/* General Navbar styling */
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+/* Center the nav items */
+.mx-auto {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+/* Login and Sign Up on the right */
+.ml-auto {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: 0; /* Reset any margin issues */
+  padding: 0;
+}
+
+/* OTP Input Styles */
+.otp-input {
+  width: 50px;
+  height: 50px;
+  font-size: 24px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+.otp-input:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+}
+
+/* Reset Button */
+#reset-btn {
+  width: 100%;
+  background-color: #17a100;
+  border-color: #17a100;
+  cursor: not-allowed;
+}
+
+#reset-btn.enabled {
+  background-color: #17a100;
+  border-color: #17a100;
+  cursor: pointer;
+}

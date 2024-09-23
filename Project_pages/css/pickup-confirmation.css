@@ -1,0 +1,199 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.header {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 56px;
+  letter-spacing: -0.011em;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  max-width: 600px; /* Adjust width as needed */
+}
+
+.btn-block {
+  margin-top: 10px;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.custom-text {
+  font-size: 16px; /* Set font size to 16px */
+  font-weight: 400; /* Set font weight to 400 */
+  font-family: "Inter", sans-serif; /* Ensure Inter font is used */
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if necessary */
+  gap: 1rem; /* Set gap between items */
+  margin-bottom: 1rem; /* Adjust margin if needed */
+}
+
+.custom-text > strong {
+  flex: 0.4 1; /* Make each item flexible */
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.text-muted {
+  color: #9e9e9e; /* Set text color to #9E9E9E */
+}
+
+.text-dark {
+  color: #1f1f1f; /* Set text color to #1F1F1F */
+}
+
+.btn-success {
+  background-color: #28a745;
+  border: none;
+  color: #fff; /* Ensure text is white for contrast */
+}
+
+.btn-success:hover {
+  background-color: transparent; /* Make background transparent on hover */
+  color: #28a745; /* Change text color to green on hover */
+  border: 2px solid #28a745; /* Add a green border on hover */
+}
+
+.btn-light {
+  background-color: #f5f5f5;
+  border: 1px solid #17a100;
+  color: #17a100; /* Set text color to green */
+}
+
+.btn-light:hover {
+  background-color: transparent; /* Make background transparent on hover */
+  color: #17a100; /* Ensure text color remains green on hover */
+  border: 1px solid #17a100; /* Maintain border color */
+}
+
+.slider-content {
+  margin-top: 60px;
+}
+
+/* Slider styles */
+.divider {
+  border: none;
+  border-top: 1px solid #9e9e9e;
+  margin: 10px 10; /* Adjust spacing around the slider */
+  width: 70%; /* Make sure it spans the full width */
+}
+
+@media (max-width: 1024) {
+  .justify-content-between {
+    justify-content: center !important;
+    gap: 1px !important;
+  }
+
+  .form-check {
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 0 !important;
+    margin-bottom: 0.125rem;
+  }
+
+  .sm-cont {
+    padding-left: 0 !important;
+  }
+}
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+  .header {
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px; /* Adjust line-height for better readability on small screens */
+    letter-spacing: -0.011em;
+    text-align: start;
+  }
+
+  .divider {
+    width: 100%; /* Ensure it spans the full width on small screens */
+  }
+
+  .custom-text {
+    flex-direction: column; /* Stack items vertically for mobile view */
+    font-size: 14px; /* Adjust font size for better readability on small screens */
+  }
+
+  .custom-text > strong {
+    margin-bottom: 5px; /* Space between label and value */
+    flex: none; /* Remove flexible sizing for labels */
+  }
+
+  p {
+    margin-bottom: 1rem; /* Ensure adequate spacing between paragraphs */
+  }
+}
+
+/* Modal CSS */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+  max-width: 500px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.modal-content h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.modal-content p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #555;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+li {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.amount {
+  font-weight: bold;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#proceedToPayBtn {
+  padding: 10px 20px;
+  background-color: #17a100 !important;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/Project_pages/css/forget.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#">Dispoze</a>
+                <!--
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            -->
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Project_pages/shop/container.html">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Project_pages/aboutus.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Project_pages/contactus.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-success" href="/Project_pages/login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-success" href="/Project_pages/sinup.html">Sign Up</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Forgot Password Section -->
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h3 class="text-center" style="margin-bottom: 2rem;">Forgot Password?</h3>
+                <p class="text-center">
+                    Not to worry. Kindly enter the recovery 
+                    pin sent to<br> 
+                    <strong>example@domain.com</strong>
+                    reset your password.
+                </p>
+                
+                
+                
+                    
+                <div class="d-flex justify-content-center">
+                    <input type="text" id="digit-1" maxlength="1" class="form-control otp-input text-center mx-1">
+                    <input type="text" id="digit-2" maxlength="1" class="form-control otp-input text-center mx-1">
+                    <input type="text" id="digit-3" maxlength="1" class="form-control otp-input text-center mx-1">
+                    <input type="text" id="digit-4" maxlength="1" class="form-control otp-input text-center mx-1">
+                </div>
+
+                <div class="text-center mt-4">
+                    <button id="reset-btn" class="btn btn-success" disabled>Proceed to reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JS -->
+    <script src="/Project_pages/Js/forget.js"></script>
+    <link rel="preload" href="/Project_pages/reset.html" as="document">
+</body>
+</html>

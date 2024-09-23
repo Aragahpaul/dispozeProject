@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- BOOTSTRAP - CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./css/paymentPage.css" />
+    <title>DISPOZE</title>
+  </head>
+  <body>
+    <!-- HEADER-NAVBAR -->
+    <section id="header">
+      <a href="#" class="logo">Dispoze</a>
+
+      <div>
+        <ul id="navlink" class="noShow-nav">
+          <li><a href="./home.html">Home</a></li>
+          <li><a href="../Project_pages/shop/container.html">Shop</a></li>
+          <li><a href="../Project_pages/aboutus.html">About Us</a></li>
+          <li><a href="../Project_pages/contactus.html">contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <ul id="navbar">
+          <li class="heading">
+            <span>Dispoze</span
+            ><a href="#" id="close"><i class="fa-solid fa-xmark closed"></i></a>
+          </li>
+          <hr />
+          <li>
+            <a href="../Project_pages/home.html"
+              ><i class="bx bx-home-alt"></i>Home</a
+            >
+          </li>
+          <li>
+            <a href="../Project_pages/profile.html"
+              ><i class="bx bx-user-circle"></i>Profile</a
+            >
+          </li>
+          <li>
+            <a href="../Project_pages/shop/container.html"
+              ><i class="bx bx-store"></i>Shop</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="bx bx-bell"></i>Notification</a>
+          </li>
+          <li>
+            <a href="../Project_pages/aboutus.html"
+              ><i class="bx bx-group"></i>About Us</a
+            >
+          </li>
+          <li>
+            <a href="../Project_pages/contact.html"
+              ><i class="bx bx-chat"></i>Contact Us</a
+            >
+          </li>
+          <li>
+            <a href="../Project_pages/login.html"
+              ><i class="bx bx-log-out"></i>Login</a
+            >
+          </li>
+          <li>
+            <a href="../Project_pages/sinup.html"
+              ><i class="bx bx-user-plus"></i>Sign Up</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div id="last-bar">
+        <div class="noti-bar">
+          <a href="#"><i class="fa-regular fa-bell"></i></a>
+          <div class="cart-count">3</div>
+        </div>
+        <div class="profile-bar">
+          <a href="#"><i class="bx bx-user-circle"></i></a>
+          <a href="#"><i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+      </div>
+      <div id="mobile">
+        <i id="bar" class="fa-solid fa-bars"></i>
+      </div>
+    </section>
+    <!-- End of Header-NavBar -->
+    <!--====================
+         Pickup-Payment Page
+      ==================== -->
+    <div class="blur-container" id="blurContainer">
+      <div class="container mt-5">
+        <div class="row row-cols-1">
+          <!-- This col-12 contains left side content  -->
+          <div class="col-12 my-5">
+            <h1 class="fw-semibold fs-3 text-md-center">
+              Choose a payment method for Pickup
+            </h1>
+
+            <form
+              class="options mt-4 form-control d-flex flex-column flex-md-row p-md-0 mx-auto"
+            >
+              <!-- credit-card -->
+              <div class="form-check sm-cont w-100">
+                <label
+                  class="form-check-label text-capitalize"
+                  for="credit-card"
+                >
+                  credit card
+                </label>
+                <input
+                  class="form-check-input ms-5"
+                  type="radio"
+                  name="paymentMethod"
+                  id="credit-card"
+                  value="credit-card"
+                />
+              </div>
+
+              <!-- bank-transfer -->
+              <div class="form-check w-100">
+                <label
+                  class="form-check-label text-capitalize"
+                  for="bank-transfer"
+                >
+                  bank transfer
+                </label>
+                <input
+                  class="form-check-input ms-5"
+                  type="radio"
+                  name="paymentMethod"
+                  id="bank-transfer"
+                  value="bank-transfer"
+                />
+              </div>
+
+              <!-- cash-payment -->
+              <div class="form-check w-100">
+                <label
+                  class="form-check-label text-capitalize"
+                  for="cash-payment"
+                >
+                  cash payment
+                </label>
+                <input
+                  class="form-check-input ms-5"
+                  type="radio"
+                  name="paymentMethod"
+                  id="cash-payment"
+                  value="cash-payment"
+                />
+              </div>
+            </form>
+
+            <!-- card-details -->
+            <!-- hidden=> displayed on selection of radio-button -->
+            <div id="card-detailsPickUp" class="d-none mx-auto">
+              <p>Enter your Card details to make payment</p>
+
+              <div class="row p-0 m-0 mt-4">
+                <div class="col-5 form-group">
+                  <label for="expirationDate" class="mb-1"
+                    ><strong>Expiration</strong
+                    ><span class="opacity-75">(MM/YY)*</span></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control w-100"
+                    id="expirationDate"
+                    placeholder="MM/YY"
+                  />
+                </div>
+                <div class="col-5 form-group ms-2 me-5">
+                  <label for="cvv" class="mb-1"><strong>CVV</strong></label>
+                  <input
+                    type="text"
+                    class="form-control w-100"
+                    id="cvv"
+                    placeholder="123"
+                  />
+                </div>
+
+                <div class="form-group cardNumber">
+                  <label for="cardNumber" class="mt-2 mb-1"
+                    ><strong>Credit or Debit Card Number</strong></label
+                  >
+                  <input
+                    type="text"
+                    class="form-control w-100"
+                    id="cardNumber"
+                    placeholder="4123 4567 9819"
+                  />
+                </div>
+
+                <small class="ps-5"
+                  >By clicking the button, you accept our terms and
+                  conditions</small
+                >
+              </div>
+              <!-- row -->
+
+              <div class="col-12">
+                <button
+                  class="btn btn-success mt-4 col-9 d-block mx-auto"
+                  type="button"
+                  id="creditBtn"
+                >
+                  Pay Now
+                </button>
+              </div>
+            </div>
+            <!-- end of card-details -->
+
+            <!-- Bank-details -->
+            <!-- hidden=> displayed on selection of radio-button -->
+            <div id="bank-detailsPickUp" class="d-none mx-auto">
+              <p class="ps-md-4">
+                Please make payment into any of the banks below
+              </p>
+
+              <!-- first bank -->
+              <div class="ps-md-4">
+                <p class="m-0 p-0"><strong>Bank Name: </strong>UBA</p>
+                <p class="m-0 p-0">
+                  <strong>Account Name: </strong> Dispoze NIGERIA LIMITED
+                </p>
+                <p class="m-0 p-0">
+                  <strong>Account Number: </strong>1132740987
+                </p>
+              </div>
+              <!-- second bank -->
+              <div class="ps-md-4 mt-4">
+                <p class="m-0 p-0"><strong>Bank Name: </strong>Wema bank</p>
+                <p class="m-0 p-0">
+                  <strong>Account Name: </strong> Dispoze NIGERIA LIMITED
+                </p>
+                <p class="m-0 p-0">
+                  <strong>Account Number: </strong>1118204584
+                </p>
+              </div>
+              <div class="col-12">
+                <button
+                  class="btn btn-success mt-4 col-9 mx-auto b-block"
+                  type="button"
+                  id="transferButton"
+                >
+                  I have made the payment
+                </button>
+              </div>
+            </div>
+            <!-- end of bank-details -->
+
+            <!-- Cash-details -->
+            <!-- hidden=> displayed on selection of radio-button -->
+            <div id="cash-detailsPickUp" class="d-none mx-auto">
+              <p class="ps-md-4">Enter your details to make payment</p>
+              <form class="row g-3 ps-md-4">
+                <div class="col-md-6">
+                  <label for="fname" class="form-label">First Name</label>
+                  <input
+                    type="text"
+                    class="form-control border-black"
+                    id="fname"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="lname" class="form-label">Last Name</label>
+                  <input
+                    type="text"
+                    class="form-control border-black"
+                    id="lname"
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="emailAddress" class="form-label">
+                    Email Address</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control border-black"
+                    id="emailAddress"
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="cHomeAddress" class="form-label"
+                    >Confirm Home Address
+                  </label>
+                  <input
+                    type="text"
+                    class="form-control border-dark"
+                    id="cHomeAddress"
+                  />
+                </div>
+                <small class="ps-4"
+                  >By clicking the button, you accept our terms and
+                  conditions</small
+                >
+                <div class="col-12">
+                  <button
+                    type="button"
+                    class="btn btn-success mt-2 col-9 mx-auto d-block"
+                    id="cashButton"
+                  >
+                    Confirm Details
+                  </button>
+                </div>
+              </form>
+            </div>
+            <!-- End of cash details -->
+          </div>
+          <!-- col-12 -->
+        </div>
+        <!-- row -->
+        <!-- card-details, bank-transfer and cash-details -->
+      </div>
+      <!-- container -->
+
+      <div class="container">
+        <div class="row payment-options-pickup">
+          <div class="col-12 text-center mb-0">
+            <img src="../images/Group 120.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </div>
+    <!-- blur-container -->
+
+    <!-- Payment-success POPUP -->
+    <!-- credit-card -->
+    <div class="popupContainer">
+      <div class="popup fw-light" id="paymentSuccessPopup">
+        <div class="popup-content">
+          <div class="tick-circle mx-auto">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <h2>Payment Successful!</h2>
+          <p>Your payment has been made successfully.</p>
+          <button
+            class="btn btn-success d-block mx-auto col-10"
+            id="closeCreditPopup"
+          >
+            Continue
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- bank-transfer -->
+    <div class="popupContainer">
+      <div class="popup fw-light" id="transferSuccessPopup">
+        <div class="popup-content">
+          <h2>Confirmation in progress!</h2>
+          <p>
+            Your transaction code will be sent to your email after payment has
+            been confirmed.
+          </p>
+          <button
+            class="btn btn-success d-block mx-auto col-4"
+            id="closeTransferPopup"
+          >
+            Ok
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- cash-payment -->
+    <div class="popupContainer">
+      <div class="popup fw-light" id="cashSuccessPopup">
+        <div class="popup-content">
+          <div class="tick-circle mx-auto">
+            <i class="fa-solid fa-check"></i>
+          </div>
+          <h2>Request Successful!</h2>
+          <p>
+            Your request to pay in cash was successful and your payment will be
+            received at your address on pickup date.
+          </p>
+          <button
+            class="btn btn-success d-block mx-auto col-10"
+            id="closeCashPopup"
+          >
+            Continue
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOOTSTRAP SCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- custom js files -->
+    <script src="./Js/responsiveNavBar.js"></script>
+    <script src="./Js/pickupPayment.js"></script>
+  </body>
+</html>

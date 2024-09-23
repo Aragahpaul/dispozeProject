@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Details</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="css/pickup-confirmation.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"> <!-- Import Inter font -->
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h3 class="header">Schedule Details</h3>
+        <hr class="divider"> <!-- Slider line -->
+        <div class="slider-content">
+            <p class="custom-text"><strong class="text-muted">Category:</strong><strong class="text-dark">Kitchen waste</strong></p>
+            <p class="custom-text"><strong class="text-muted">Quantity of waste:</strong><strong class="text-dark">2 bagsters, 1 container</strong></p>
+            <p class="custom-text"><strong class="text-muted">Date:</strong><strong class="text-dark">Thursday, 30th of June</strong></p>
+            <p class="custom-text"><strong class="text-muted">Time:</strong><strong class="text-dark">11:00AM</strong></p>
+            <p class="custom-text"><strong class="text-muted">Address:</strong><strong class="text-dark">10, Kodecamp street, Lagos</strong></p>
+            <p class="custom-text"><strong class="text-muted">Fee:</strong><strong class="text-dark">₦1,200</strong></p>
+            <button id="confirmPickupBtn" class="btn btn-success btn-block">Confirm Pickup</button>
+            <a href="schedule-pickup.html" class="btn btn-light btn-block">Edit Schedule Details</a>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="billModal" class="modal">
+        <div class="modal-content">
+            <h2>Bill Summary</h2>
+            <p>Here is a breakdown of your waste bill</p>
+            <ul>
+                <li>2 bagsters <span class="amount">₦ 500</span></li>
+                <li>1 container <span class="amount">₦ 700</span></li>
+                <li class="total">TOTAL <span class="amount">₦ 1,200</span></li>
+            </ul>
+            <button id="proceedToPayBtn">Proceed to Pay</button>
+        </div>
+    </div>
+    <script src="/Project_pages/Js/pickup-confirmation.js"></script>
+</body>
+</html>

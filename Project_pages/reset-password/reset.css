@@ -1,0 +1,185 @@
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+}
+
+/* Header Styles */
+.header {
+    background-color: #f8f9fa;
+    padding-top: 10px 0;
+}
+
+/* Grid layout for the navbar */
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+}
+
+/* Logo on the left */
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-left: -13rem; /* Adjust as needed */
+    justify-self: start;
+}
+
+/* Center the nav items */
+.mx-auto {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-right: 100rem;
+    padding: 0;
+}
+
+/* Login and Sign Up on the right */
+.ml-auto {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: -12rem;
+    padding: 0;
+}
+
+.nav-link {
+    color: #000;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.nav-link.text-success {
+    color: #17a100 !important;
+}
+
+.nav-link:hover {
+    color: #17a100;
+}
+
+.btn-success {
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+/* Main Content Centering */
+main {
+    min-height: 70vh; /* Ensures the form is vertically centered */
+}
+
+/* Form Styles */
+#reset-password-form {
+    max-width: 600px; /* Adjusted max-width to fit both fields side by side */
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: none; /* Remove the border by removing the box-shadow */
+}
+
+.form-control {
+    padding: 8px 10px; /* Increased padding for larger input field */
+    font-size: 1rem; /* Increase font size for larger dots */
+    height: 40px; /* Adjust height to make the input field taller */
+}
+
+.form-group label {
+    font-size: 0.875rem; /* Small label size */
+    font-weight: 600; /* Slightly bold to match the image */
+    margin-bottom: 5px; /* Space between label and input field */
+    display: inline-block; /* Keeps label above input */
+}
+
+.input-group-append .input-group-text i {
+    color: #c7c7c7; /* Lighter gray for the eye icon */
+    font-size: 1.25rem; /* Optional: Slightly larger icon size */
+}
+
+.input-group-append .input-group-text {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.form-control {
+    padding-right: 2.5rem; /* Adjust space for the icon inside the input */
+}
+
+#reset-password-button {
+    background-color: #17a100;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#reset-password-button.disabled {
+    background-color: #17a100;
+    cursor: not-allowed;
+}
+
+#reset-password-button:not(.disabled):hover {
+    background-color: #17a100;
+}
+
+ul.small {
+    font-size: 0.875rem; /* Small size for password requirements */
+}
+
+/* Button Styles */
+#reset-password-button {
+    background-color: #17a100; /* Green color to match the image */
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem; /* Larger font size */
+}
+
+#reset-password-button:disabled {
+    background-color: #17a100; /* Keep the same color when disabled */
+    cursor: not-allowed;
+    opacity: 0.65; /* Reduced opacity for disabled state */
+}
+
+#reset-password-button:not(:disabled):hover {
+    background-color: #17a100; /* Darker green on hover */
+}
+
+
+/* Hide the header for mobile screens */
+@media (max-width: 767px) {
+    .header {
+        display: none;
+    }
+
+    #reset-password-form {
+        padding: 10px; /* Adjust padding on mobile */
+        box-shadow: none; /* Remove shadow on mobile */
+    }
+
+    .form-control {
+        height: 45px; /* Slightly shorter input fields on mobile */
+    }
+
+    #reset-password-button {
+        padding: 12px; /* Adjust button padding on mobile */
+        font-size: 1rem; /* Ensure font size remains large enough on mobile */
+        display: block; /* Ensure the button is a block-level element */
+        margin: 20px auto 0 auto; /* Center the button with auto margins */
+        width: 100%; /* Full width on mobile */
+        max-width: 300px; /* Optionally set a max-width to limit its size */
+    }
+
+    /* Adjust the positioning of the text-center element */
+    .text-center {
+        margin-top: 100px; /* Add margin to move the content down */
+    }
+}
+

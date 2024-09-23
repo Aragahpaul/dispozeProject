@@ -1,0 +1,358 @@
+/* Container for the form layout */
+.container-custom {
+  max-width: 700px; /* Adjust as needed */
+  margin: auto;
+}
+
+/* For the heading*/
+.schedule-heading {
+  font-family: "Inter", sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+  color: #1f1f1f;
+  line-height: 72px;
+  margin-top: 30px; /* Adding space above the heading */
+}
+.schedule-subheading {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 400; /* Regular weight */
+  color: #525252;
+  line-height: 30px;
+}
+
+/* Flex container for form elements */
+#scheduleForm {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping of items */
+  gap: 1rem; /* Space between form elements */
+  width: 100%;
+}
+
+/* Style for individual form groups */
+.form-group {
+  flex: 1 1 calc(50% - 1rem); /* Flex basis for side-by-side layout */
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* Full-width button container */
+.schedule-button-container {
+  width: 100%; /* Full width */
+  margin-top: 1rem; /* Space above the button */
+}
+
+/* Full-width button style */
+.schedule-button {
+  width: 100%; /* Full width */
+  padding: 0.75rem 1.5rem; /* Padding for a better look */
+}
+
+/* Responsive design for mobile */
+@media (max-width: 575.98px) {
+  #scheduleForm {
+    flex-direction: column; /* Stack form elements vertically on mobile */
+    gap: 1rem; /* Space between form elements on mobile */
+  }
+
+  .form-group {
+    flex: 1 1 100%; /* Each form group takes full width on mobile */
+  }
+
+  .schedule-button-container {
+    margin-top: 1rem; /* Ensure space above the button on mobile */
+  }
+}
+
+#category {
+  width: 90%;
+}
+
+#date {
+  width: 90%;
+}
+
+#time {
+  width: 90%;
+}
+
+.note-label-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.note-label-container .note-counter {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+.note-label-container .note-counter span {
+  padding-right: 40px; /* Space from the edge */
+}
+.form-label-required {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+}
+.form-label-required::after {
+  content: "*";
+  color: #000000; /* Color of the asterisk */
+  margin-left: 4px; /* Space between text and asterisk */
+}
+
+@media (min-width: 768px) {
+  .mobile-only {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .mobile-only {
+    display: block;
+  }
+}
+
+/* Hide default radio button */
+.form-check-input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Custom radio button styling */
+.form-check-label {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px; /* Adjust as needed */
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+/* Radio button custom checkmark */
+.form-check-label::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px; /* Adjust as needed */
+  width: 20px; /* Adjust as needed */
+  border-radius: 50%;
+  background-color: #f9f9f9; /* Default background color */
+  border: 2px solid #17a100; /* Custom border color */
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+/* Style when radio button is checked */
+.form-check-input:checked + .form-check-label::before {
+  background-color: #f9f9f9; /* Custom color */
+  border-color: #17a100; /* Custom border color */
+}
+
+/* Inner dot when checked */
+.form-check-input:checked + .form-check-label::after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: #17a100; /* Inner dot color */
+  width: 10px; /* Adjust as needed */
+  height: 10px; /* Adjust as needed */
+  left: 5px; /* Adjust as needed */
+  top: 5px; /* Adjust as needed */
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  background-color: #6b6b6b; /* Background color */
+  margin: auto;
+  top: 35%;
+  padding: 20px;
+  border-radius: 7px; /* Border radius */
+  width: 300px; /* Adjusted width */
+  height: 150px; /* Adjusted height */
+  color: #ffffff; /* Text color */
+  text-align: center;
+  opacity: 0; /* Hide initially */
+  transition: opacity 0.3s ease; /* Fade-in effect */
+}
+
+.modal-content.show {
+  opacity: 1; /* Show modal with fade-in effect */
+}
+
+.time-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #444;
+  border-radius: 4px;
+  background-color: #ffffff; /* Background color of the input */
+  color: #000000; /* Text color in the input */
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.modal-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.calendar-modal {
+  background-color: white;
+  color: black;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  height: fit-content;
+  opacity: 1;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar-nav button {
+  background-color: #d1d1d1;
+  border-radius: 50%;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.calendar-body {
+  display: grid;
+  grid-template-columns: 1fr; /* Single column for vertical alignment */
+  grid-template-rows: auto 1fr; /* Header row, then date rows */
+}
+
+.calendar-weekdays {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr); /* 7 columns for weekdays */
+  gap: 10px; /* Add space between weekday labels */
+  font-weight: bold;
+  border-bottom: 1px solid #ccc;
+}
+
+.calendar-weekdays div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  gap: 100px;
+}
+
+.calendar-dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for dates */
+  gap: 5px; /* Space between dates */
+  padding-top: 10px;
+}
+
+.calendar-dates .date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.date.selected {
+  background-color: #28a745;
+  color: white;
+}
+
+#calendarMonth {
+  color: #28a745;
+  font-weight: 700;
+  font-size: 20px; /* Use font-size property instead of size */
+}
+.dropdown-modal {
+  position: relative;
+}
+.dropdown-input {
+  cursor: pointer;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  top: 100%;
+  left: 0;
+}
+.dropdown-content label {
+  display: block;
+  padding: 5px 0;
+}
+.dropdown-content button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.dropdown-content button:hover {
+  background-color: #218838;
+}
+.form-select,
+.form-control {
+  cursor: pointer;
+  width: 90%;
+}
+.btn-success {
+  --bs-btn-bg: rgba(23, 161, 0, 0.5);
+  ---btnbs-border-color: rgb(41, 168, 68);
+  --bs-btn-border-color: rgba(23, 161, 0, 0.5);
+  --bs-btn-hover-bg: #28a744;
+  --bs-btn-hover-border-color: rgba(23, 161, 0);
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper .form-control {
+  padding-right: 30px; /* Adjust to create space for the icon */
+}
+
+.input-wrapper .icon {
+  position: absolute;
+  right: 50px; /* Position the icon from the right edge */
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none; /* Ensure the icon doesn't interfere with input clicks */
+  color: #888; /* Adjust icon color as needed */
+}
+
+.custom-label {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+}

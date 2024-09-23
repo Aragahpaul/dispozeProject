@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudyNow</title>
+
+    <!-- BOOTSTRAP - CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- AOS LIBRARY -->
+    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="/Project_pages/css/landingUpdated.css" />
+  </head>
+
+  <body>
+    <section id="header">
+      <a href="#" class="logo">Dispoze</a>
+
+      <div>
+        <ul id="navlink" class="noShow-nav">
+          <li><a href="#">Home</a></li>
+          <li><a href="/Project_pages/shop/container.html">Shop</a></li>
+          <li><a href="/Project_pages/aboutus.html">About Us</a></li>
+          <li><a href="/Project_pages/contactus.html">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <ul id="navbar">
+          <li class="heading">
+            <span>Dispoze</span
+            ><a href="#" id="close"><i class="fa-solid fa-xmark closed"></i></a>
+          </li>
+          <hr />
+          <li>
+            <a href="/Project_pages/home.html"
+              ><i class="bx bx-home-alt"></i>Home</a
+            >
+          </li>
+          <li>
+            <a href="/Project_pages/profile.html"
+              ><i class="bx bx-user-circle"></i>Profile</a
+            >
+          </li>
+          <li>
+            <a href="/Project_pages/shop/container.html"
+              ><i class="bx bx-store"></i>Shop</a
+            >
+          </li>
+          <li>
+            <a href="#"><i class="bx bx-bell"></i>Notification</a>
+          </li>
+          <li>
+            <a href="/Project_pages/aboutus.html"
+              ><i class="bx bx-group"></i>About Us</a
+            >
+          </li>
+          <li>
+            <a href="/Project_pages/contact.html"
+              ><i class="bx bx-chat"></i>Contact Us</a
+            >
+          </li>
+          <li>
+            <a href="/Project_pages/login.html"
+              ><i class="bx bx-log-out"></i>Login</a
+            >
+          </li>
+          <li>
+            <a href="/Project_pages/sinup.html"
+              ><i class="bx bx-user-plus"></i>Sign Up</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div id="last-bar">
+        <div class="noti-bar">
+          <a href="#"><i class="fa-regular fa-bell"></i></a>
+          <div class="cart-count">3</div>
+        </div>
+
+        <div class="profile-bar">
+          <a href="#" class="profile-icon" id="dropdownButton"
+            ><i class="bx bx-user-circle prof"></i
+          ></a>
+          <a href="#"><i class="fa-solid fa-chevron-down chev"></i></a>
+          <div class="dropdown-menu" id="dropdownMenu">
+            <a
+              href="/Project_pages/sinup.html"
+              class="dropdown-item signin adjust"
+              ><i class="bx bx-log-in pop-prof logout-icon"></i>Sign Up</a
+            >
+          </div>
+        </div>
+      </div>
+      <div id="mobile">
+        <i id="bar" class="fa-solid fa-bars"></i>
+      </div>
+    </section>
+
+    <section id="hero-section">
+      <div class="hero-wrapper">
+        <div class="text-section">
+          <h1>
+            The Most Reliable & <br />
+            Efficient
+            <span
+              >Waste <br />
+              Disposal Service.</span
+            >
+          </h1>
+          <p>
+            You can always count on us to have your waste <br />
+            disposed off properly and at a time convenient <br />
+            for you. We put you first!
+          </p>
+
+          <div class="primary-button">
+            <a href="/Project_pages/schedule-pickup.html" class="pry-btn"
+              >Request Pickup</a
+            >
+          </div>
+        </div>
+
+        <div class="hero-img">
+          <img src="/Project_pages/images/heroimg.png" alt="Hero Image" />
+        </div>
+      </div>
+    </section>
+
+    <section id="service-section">
+      <div class="contents">
+        <div class="service-header">
+          <p>What we are offering.....</p>
+          <h2>The services we are providing</h2>
+        </div>
+        <div class="cards-holder">
+          <div class="service-cards">
+            <img src="/Project_pages/images/service/service-1.png" alt="" />
+            <h3>Zero Waste</h3>
+            <p>
+              We make sure your environment is waste <br />
+              free
+            </p>
+          </div>
+          <div class="service-cards">
+            <img src="/Project_pages/images/service/service-2.png" alt="" />
+            <h3>Dumpster Rental</h3>
+            <p>We rent out dumpsters at an affordable price</p>
+          </div>
+          <div class="service-cards">
+            <img src="/Project_pages/images/service/service-3.png" alt="" />
+            <h3>Portable Toliet</h3>
+            <p>We rent out portable toliets for both puble and jprivate use</p>
+          </div>
+          <div class="service-cards">
+            <img src="/Project_pages/images/service/service-4.png" alt="" />
+            <h3>Recycling Service</h3>
+            <p>We recycle your waste to reuseable products</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features-section">
+      <div class="features-container">
+        <div class="features-left">
+          <img
+            class="first-pic"
+            src="/Project_pages/images/fesec.jpeg"
+            alt=""
+          />
+          <div class="top-img-pos">
+            <img src="/Project_pages/images/top-img.png" alt="" />
+          </div>
+        </div>
+
+        <div class="features-right">
+          <p class="title">Welcome to Dispoze waste management company....</p>
+          <h2>
+            We’ve been working <br />
+            for the past 12yrs
+          </h2>
+          <p class="fe-text">
+            We have been in the business of handling household <br />
+            and industrial wastes for 12 years and 90% of our <br />
+            customers are satisfied and happy ones.
+          </p>
+          <div class="items-design">
+            <div class="first-items">
+              <span>01</span>
+              <p>
+                GOING ABOVE & <br />
+                BEYOND
+              </p>
+            </div>
+            <div class="second-items">
+              <span>02</span>
+              <p>
+                CONNECTED TO <br />
+                PEOPLE FIRST
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="why-us">
+      <div class="whyus-container">
+        <div class="w-left">
+          <p>Why choose us....</p>
+          <h2>
+            We’ll make sure your <br />
+            waste goes to the <br />
+            right places
+          </h2>
+
+          <div class="L-part">
+            <div class="image-part">
+              <img src="/Project_pages/images/whyUs/why-us img.png" alt="" />
+            </div>
+            <div class="text-part">
+              <h4>Eric Chinedu</h4>
+              <p>CEO- Co-Founder</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-right">
+          <div class="why-items">
+            <div class="why-items-image">
+              <img src="/Project_pages/images/whyUs/whyUs-1.png" alt="" />
+            </div>
+            <div class="why-items-texts">
+              <h4>4000+</h4>
+              <p>Waste picked and disposed</p>
+            </div>
+          </div>
+          <div class="why-items">
+            <div class="why-items-image">
+              <img src="/Project_pages/images/whyUs/whyUs-2.png" alt="" />
+            </div>
+            <div class="why-items-texts">
+              <h4>99%</h4>
+              <p>Our company is successful</p>
+            </div>
+          </div>
+          <div class="why-items">
+            <div class="why-items-image">
+              <img src="/Project_pages/images/whyUs/whyUs-3.png" alt="" />
+            </div>
+            <div class="why-items-texts">
+              <h4>20000+</h4>
+              <p>Satisfied and happy customers</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="call-to-action">
+      <div class="cta-container">
+        <p>
+          MANAGE WASTE EFFECTIVELY <br />
+          AND REDUCE ENVIRONMENTAL IMPACT
+        </p>
+
+        <div class="cta-buttons">
+          <a href="/Project_pages/schedule-pickup.html" class="cta-btn"
+            >Request Now</a
+          >
+          <a href="/Project_pages/contact.html" class="secondary-button"
+            >Contact Us</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section id="completed-section">
+      <div class="text-div">
+        <h3>
+          RECENTLY COMPLETED <br />
+          PROJECTS
+        </h3>
+
+        <p>
+          Some of our recently completed <br />
+          projects includes; carry out cleanup, <br />
+          helping by drilling waters from flooded <br />
+          areas, e.t.c
+        </p>
+      </div>
+
+      <div class="image-div">
+        <img
+          src="/Project_pages/images/completed/completed-img-1.jpeg"
+          alt=""
+        />
+        <img
+          src="/Project_pages/images/completed/completed-img-2.jpeg"
+          alt=""
+        />
+        <img
+          src="/Project_pages/images/completed/completed-img-3.jpeg"
+          alt=""
+        />
+      </div>
+    </section>
+
+    <section id="feedback">
+      <div class="text-section">
+        <div class="topp-text">
+          <h5>Our Customers Feedback...</h5>
+          <h3>WHAT OUR CUSTOMERS ARE SAYING</h3>
+        </div>
+
+        <div class="top-text-2">
+          <h4>GREAT JOB AND FAIR PRICING</h4>
+          <hr />
+          <p>
+            “The company has an awesome operation <br />
+            team. I commend them for a job well done. <br />
+            They are also very affordable.”
+          </p>
+        </div>
+      </div>
+
+      <div class="image-section">
+        <img src="/Project_pages/images/feedback-img.jpeg" alt="" />
+        <h4>JASMIN BROWN</h4>
+        <p>Customer</p>
+      </div>
+    </section>
+
+    <section id="segregation-section">
+      <p class="title">Segregation guide....</p>
+      <h2>KNOW THE RIGHT BIN FOR YOUR WASTE</h2>
+      <div class="segregation-container">
+        <div class="indiv-items">
+          <img
+            src="/Project_pages/images/segregation/segregation-img-1.png"
+            alt=""
+          />
+          <h4>Sanitary wastes</h4>
+          <p>
+            E.g used tissues,sanitary <br />
+            towels,diapers,bandages etc
+          </p>
+        </div>
+        <div class="indiv-items">
+          <img
+            src="/Project_pages/images/segregation/segregation-img-2.png"
+            alt=""
+          />
+          <h4>Recyclable wastes</h4>
+          <p>
+            E.g Plastics, cardboards, <br />
+            newspapers, woods etc
+          </p>
+        </div>
+        <div class="indiv-items">
+          <img
+            src="/Project_pages/images/segregation/segregation-img-3.png"
+            alt=""
+          />
+          <h4>kitchen wastes</h4>
+          <p>
+            E.g leftovers, fruit/vegetable <br />
+            peels, egg shells etc
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="steps-section">
+      <p class="title">4 Simple Steps....</p>
+      <h2>OUR WORKING PROCESS</h2>
+      <div class="steps-container">
+        <div class="indiv-steps">
+          <div class="indiv-bgs">
+            <img src="/Project_pages/images/steps/step-img-1.png" alt="" />
+            <div class="ttop-indication">01</div>
+          </div>
+          <h4>SEGREGATE</h4>
+          <p>
+            We pickup your waste <br />
+            at the inputed location <br />
+            and help keep the <br />
+            environment cleen
+          </p>
+        </div>
+
+        <div class="indiv-steps">
+          <div class="indiv-bgs">
+            <svg
+              width="124"
+              height="134"
+              viewBox="0 0 124 134"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.5 0.786133C11.3891 0.786133 7.44666 2.53015 4.53984 5.63451C1.63303 8.73887 0 12.9493 0 17.3395V108.383C0 110.578 0.816515 112.684 2.26992 114.236C3.72333 115.788 5.69457 116.66 7.75 116.66V65.2947C7.74843 63.2793 8.02258 61.2745 8.56375 59.3438L16.6392 30.6071C17.7174 26.7719 19.9244 23.41 22.9329 21.0201C25.9414 18.6301 29.591 17.3395 33.3405 17.3395H90.6595C98.363 17.3395 105.152 22.7359 107.361 30.6071L115.436 59.3438C115.977 61.2745 116.252 63.2793 116.25 65.2947V116.66C118.305 116.66 120.277 115.788 121.73 114.236C123.183 112.684 124 110.578 124 108.383V17.3395C124 12.9493 122.367 8.73887 119.46 5.63451C116.553 2.53015 112.611 0.786133 108.5 0.786133H15.5ZM108.5 65.2947V120.798C108.5 124.091 107.275 127.249 105.095 129.577C102.915 131.905 99.9581 133.213 96.875 133.213H89.125C86.0419 133.213 83.085 131.905 80.9049 129.577C78.7248 127.249 77.5 124.091 77.5 120.798V116.66H46.5V120.798C46.5 124.091 45.2752 127.249 43.0951 129.577C40.915 131.905 37.9581 133.213 34.875 133.213H27.125C24.0419 133.213 21.085 131.905 18.9049 129.577C16.7248 127.249 15.5 124.091 15.5 120.798V65.2947C15.4994 64.0866 15.6638 62.8848 15.9883 61.7275L24.0637 32.9825C24.6634 30.853 25.8896 28.9865 27.5606 27.6597C29.2315 26.3328 31.2583 25.6163 33.3405 25.6162H90.6595C92.7417 25.6163 94.7685 26.3328 96.4394 27.6597C98.1104 28.9865 99.3366 30.853 99.9363 32.9825L108.012 61.7275C108.337 62.8862 108.5 64.0946 108.5 65.2947ZM23.25 120.798C23.25 121.896 23.6583 122.948 24.385 123.725C25.1117 124.501 26.0973 124.937 27.125 124.937H34.875C35.9027 124.937 36.8883 124.501 37.615 123.725C38.3417 122.948 38.75 121.896 38.75 120.798V116.66H23.25V120.798ZM99.665 58.723L94.581 37.0298C94.3721 36.1355 93.8897 35.3413 93.2102 34.773C92.5307 34.2048 91.693 33.895 90.83 33.8929H33.1777C32.3134 33.8932 31.4739 34.2021 30.7928 34.7705C30.1118 35.3389 29.6282 36.1341 29.419 37.0298L24.335 58.723H99.665ZM85.25 120.798C85.25 121.896 85.6583 122.948 86.385 123.725C87.1117 124.501 88.0973 124.937 89.125 124.937H96.875C97.9027 124.937 98.8883 124.501 99.615 123.725C100.342 122.948 100.75 121.896 100.75 120.798V116.66H85.25V120.798ZM38.75 91.8298C40.8054 91.8298 42.7767 90.9578 44.2301 89.4056C45.6835 87.8534 46.5 85.7482 46.5 83.5531C46.5 81.358 45.6835 79.2528 44.2301 77.7006C42.7767 76.1484 40.8054 75.2764 38.75 75.2764C36.6946 75.2764 34.7233 76.1484 33.2699 77.7006C31.8165 79.2528 31 81.358 31 83.5531C31 85.7482 31.8165 87.8534 33.2699 89.4056C34.7233 90.9578 36.6946 91.8298 38.75 91.8298ZM93 83.5531C93 81.358 92.1835 79.2528 90.7301 77.7006C89.2767 76.1484 87.3054 75.2764 85.25 75.2764C83.1946 75.2764 81.2233 76.1484 79.7699 77.7006C78.3165 79.2528 77.5 81.358 77.5 83.5531C77.5 85.7482 78.3165 87.8534 79.7699 89.4056C81.2233 90.9578 83.1946 91.8298 85.25 91.8298C87.3054 91.8298 89.2767 90.9578 90.7301 89.4056C92.1835 87.8534 93 85.7482 93 83.5531ZM50.375 91.8298C49.3473 91.8298 48.3617 92.2658 47.635 93.0419C46.9083 93.818 46.5 94.8706 46.5 95.9682C46.5 97.0657 46.9083 98.1183 47.635 98.8944C48.3617 99.6705 49.3473 100.107 50.375 100.107H73.625C74.6527 100.107 75.6383 99.6705 76.365 98.8944C77.0917 98.1183 77.5 97.0657 77.5 95.9682C77.5 94.8706 77.0917 93.818 76.365 93.0419C75.6383 92.2658 74.6527 91.8298 73.625 91.8298H50.375Z"
+                fill="white"
+              />
+            </svg>
+
+            <div class="ttop-indication">02</div>
+          </div>
+          <h4>PICKUP</h4>
+          <p>
+            After picking up the <br />
+            waste we arrange <br />
+            based on the types into
+            <br />
+            batches
+          </p>
+        </div>
+
+        <div class="indiv-steps">
+          <div class="indiv-bgs">
+            <svg
+              width="124"
+              height="142"
+              viewBox="0 0 124 142"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M122.363 88.868L112.787 80.0814C113.24 77.1002 113.474 74.0562 113.474 71.0122C113.474 67.9683 113.24 64.9243 112.787 61.9431L122.363 53.1564C123.085 52.4928 123.602 51.609 123.845 50.6224C124.088 49.6358 124.045 48.5933 123.722 47.6334L123.591 47.2254C120.954 39.3178 117.007 31.9874 111.939 25.5882L111.676 25.2587C111.061 24.4829 110.242 23.9251 109.326 23.659C108.41 23.393 107.44 23.431 106.545 23.7681L94.6593 28.3027C90.2735 24.4428 85.3761 21.3989 80.0839 19.265L77.7887 5.92803C77.6156 4.9245 77.162 4.00127 76.4883 3.28101C75.8146 2.56074 74.9526 2.07753 74.017 1.89557L73.6223 1.81712C66.0057 0.342211 57.9943 0.342211 50.3777 1.81712L49.983 1.89557C49.0474 2.07753 48.1854 2.56074 47.5117 3.28101C46.838 4.00127 46.3844 4.9245 46.2113 5.92803L43.9014 19.3277C38.6515 21.4621 33.7626 24.5044 29.4285 28.3341L17.4553 23.7681C16.5601 23.4283 15.5898 23.3889 14.6732 23.6552C13.7567 23.9214 12.9373 24.4807 12.324 25.2587L12.0609 25.5882C6.99891 31.9919 3.05216 39.3211 0.409367 47.2254L0.277794 47.6334C-0.380069 49.5947 0.160841 51.7914 1.63738 53.1564L11.3299 62.0373C10.8767 64.9871 10.6574 67.9997 10.6574 70.9965C10.6574 74.0091 10.8767 77.0217 11.3299 79.9558L1.63738 88.8367C0.915128 89.5003 0.398204 90.3841 0.155344 91.3707C-0.0875173 92.3573 -0.0448078 93.3998 0.277794 94.3597L0.409367 94.7677C3.05544 102.676 6.97338 109.972 12.0609 116.405L12.324 116.734C12.9388 117.51 13.7582 118.068 14.6742 118.334C15.5902 118.6 16.5599 118.562 17.4553 118.225L29.4285 113.659C33.785 117.503 38.6532 120.547 43.9014 122.665L46.2113 136.065C46.3844 137.069 46.838 137.992 47.5117 138.712C48.1854 139.432 49.0474 139.916 49.983 140.098L50.3777 140.176C58.0643 141.659 65.9357 141.659 73.6223 140.176L74.017 140.098C74.9526 139.916 75.8146 139.432 76.4883 138.712C77.162 137.992 77.6156 137.069 77.7887 136.065L80.0839 122.728C85.3739 120.6 90.299 117.546 94.6593 113.69L106.545 118.225C107.44 118.565 108.41 118.604 109.327 118.338C110.243 118.072 111.063 117.512 111.676 116.734L111.939 116.405C117.027 109.956 120.945 102.676 123.591 94.7677L123.722 94.3597C124.38 92.4298 123.839 90.2331 122.363 88.868ZM102.407 63.7946C102.773 66.1639 102.963 68.5959 102.963 71.0279C102.963 73.46 102.773 75.892 102.407 78.2612L101.443 84.5532L112.363 94.5794C110.708 98.6729 108.618 102.548 106.135 106.128L92.5687 100.965L87.9783 105.014C84.4843 108.089 80.5956 110.505 76.3853 112.2L70.8154 114.444L68.1985 129.663C64.0696 130.165 59.9011 130.165 55.7722 129.663L53.1554 114.412L47.6293 112.137C43.4629 110.442 39.5888 108.026 36.124 104.966L31.5336 100.903L17.8793 106.112C15.394 102.519 13.3181 98.6432 11.6515 94.5637L22.689 84.4433L21.7388 78.1671C21.3879 75.8292 21.1979 73.4129 21.1979 71.0279C21.1979 68.6273 21.3733 66.2266 21.7388 63.8888L22.689 57.6125L11.6515 47.4922C13.3035 43.397 15.394 39.5371 17.8793 35.944L31.5336 41.1532L36.124 37.0894C39.5888 34.0297 43.4629 31.6134 47.6293 29.9188L53.17 27.6751L55.7868 12.4239C59.8948 11.9218 64.0905 11.9218 68.2132 12.4239L70.83 27.6437L76.3999 29.8874C80.5956 31.582 84.4989 33.9983 87.9929 37.0737L92.5833 41.1218L106.15 35.9597C108.635 39.5528 110.711 43.4283 112.378 47.5079L101.457 57.5341L102.407 63.7946ZM62.0146 41.8436C47.8048 41.8436 36.2849 54.2077 36.2849 69.4589C36.2849 84.7101 47.8048 97.0742 62.0146 97.0742C76.2245 97.0742 87.7444 84.7101 87.7444 69.4589C87.7444 54.2077 76.2245 41.8436 62.0146 41.8436ZM73.593 81.8858C72.0744 83.5203 70.2697 84.8165 68.2826 85.6998C66.2955 86.583 64.1653 87.0358 62.0146 87.0322C57.6435 87.0322 53.5355 85.1965 50.4362 81.8858C48.9132 80.2559 47.7056 78.3189 46.8826 76.1862C46.0597 74.0535 45.6378 71.7672 45.6411 69.4589C45.6411 64.7674 47.3516 60.3584 50.4362 57.032C53.5355 53.7056 57.6435 51.8855 62.0146 51.8855C66.3858 51.8855 70.4937 53.7056 73.593 57.032C75.116 58.6619 76.3237 60.5989 77.1466 62.7316C77.9695 64.8643 78.3915 67.1505 78.3881 69.4589C78.3881 74.1503 76.6777 78.5594 73.593 81.8858Z"
+                fill="white"
+              />
+            </svg>
+
+            <div class="ttop-indication">03</div>
+          </div>
+          <h4>PROCESSING</h4>
+          <p>
+            After collection all <br />
+            batches are kept for <br />
+            processing before sent <br />
+            for dispose
+          </p>
+        </div>
+
+        <div class="indiv-steps">
+          <div class="indiv-bgs">
+            <svg
+              width="124"
+              height="158"
+              viewBox="0 0 124 158"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M50.0227 1.00242C48.7602 1.14696 47.5805 1.74124 46.6747 2.68898L20.0767 31.0124H5.63636C2.53073 31.0124 0 33.7073 0 37.0144V49.0183C0 52.3254 2.53073 55.0203 5.63636 55.0203H7.04545L19.902 137.362C19.8984 137.486 19.8984 137.61 19.902 137.734C20.8207 142.463 22.5455 146.983 25.7187 150.68C27.4191 152.665 29.4854 154.255 31.7885 155.352C34.0916 156.448 36.5823 157.028 39.1051 157.054H84.8949C87.4048 157.051 89.8874 156.5 92.1897 155.436C94.492 154.372 96.5652 152.816 98.2813 150.866C101.5 147.175 103.258 142.433 104.098 137.548C104.099 137.486 104.099 137.424 104.098 137.362L117.124 55.0203H118.364C121.469 55.0203 124 52.3254 124 49.0183V37.0144C124 33.7073 121.469 31.0124 118.364 31.0124H109.554L93.7045 10.0054C93.2326 9.3538 92.6136 8.83986 91.905 8.51141C91.1965 8.18295 90.4215 8.05064 89.652 8.12678C88.9625 8.21757 88.3014 8.47412 87.7187 8.87703L71.5142 20.5089L54.7685 2.68898C54.1534 2.03865 53.4057 1.54816 52.5836 1.25565C51.7615 0.963134 50.8871 0.876479 50.0284 1.00242H50.0227ZM50.7273 15.6353L65.1733 31.0124H36.2756L50.7273 15.6293V15.6353ZM89.3025 19.5726L97.9318 31.0124H81.3722L78.0298 27.4472L89.3025 19.5726ZM18.3182 55.0203H22.196L28.8864 62.1507L20.7813 70.5895L18.3182 55.0203ZM30.1207 55.0203H35.402L32.7585 57.8353L30.1264 55.0203H30.1207ZM43.152 55.0203H52.6662L57.7727 60.4581L46.5 72.4621L36.6364 61.9586L43.152 55.0203ZM60.7656 55.0203H62.7045L61.8253 56.1487L60.76 55.0203H60.7656ZM70.804 55.0203H80.3182L86.8338 61.9586L76.9702 72.4621L65.6975 60.2721L70.804 55.0203ZM88.0682 55.0203H93.3551L90.706 57.8353L88.0738 55.0203H88.0682ZM101.28 55.0203H105.857L103.393 71.1537L94.7585 61.9586L101.285 55.0203H101.28ZM61.6449 64.5875L73.098 76.5915L61.6505 88.5955L50.3778 76.5915L61.6505 64.5875H61.6449ZM32.7642 66.2741L42.4475 76.5915L31.1747 88.5955L22.0156 78.8422L21.8409 77.9059L32.7642 66.2741ZM90.706 66.2741L101.979 78.278L92.2955 88.7815L81.0227 76.5915L90.7116 66.2741H90.706ZM46.5 80.9069L57.7727 92.9109L46.5 104.915L35.2273 92.9109L46.5 80.9069ZM76.9702 80.9069L88.4176 92.9109L77.1449 104.915L65.7031 92.9109L76.9758 80.9069H76.9702ZM100.575 88.4094L99.3409 96.284L96.1676 92.9049L100.575 88.4034V88.4094ZM23.5995 88.9676L27.3025 92.9049L24.6591 95.7258L23.5995 88.9676ZM31.1804 97.0342L42.4531 109.038L31.1804 121.228L28.0127 117.855L25.7187 102.85L31.186 97.0342H31.1804ZM61.6562 97.0342L73.098 109.224L61.8253 121.228L50.3835 109.038L61.6562 97.0342ZM92.3011 97.0342L98.2925 103.414L95.9985 117.099L92.3011 121.042L81.0284 109.038L92.3011 97.0342ZM46.5056 113.354L57.7784 125.358L46.5056 137.548L35.2329 125.544L46.5056 113.354ZM76.9758 113.354L88.2485 125.358L76.9758 137.362L65.7031 125.358L76.9758 113.354ZM31.3551 129.667L42.6278 141.671L39.4545 145.05H39.0995C36.8956 145.05 35.5993 144.27 34.1733 142.613C32.5059 140.578 31.3536 138.124 30.8253 135.483V135.297L30.1207 130.795L31.3495 129.667H31.3551ZM61.8309 129.667L73.1036 141.671L69.9304 145.05H53.5455L50.3722 141.671L61.8253 129.667H61.8309ZM92.3011 129.667L93.8849 131.36L93.1804 135.297C93.1691 135.357 93.1916 135.417 93.1804 135.483C92.6449 138.424 91.3993 141.017 90.0127 142.613C88.5924 144.234 87.1438 145.05 84.9005 145.05H84.196L81.0284 141.671L92.3011 129.667Z"
+                fill="white"
+              />
+            </svg>
+
+            <div class="ttop-indication">04</div>
+          </div>
+          <h4>DISPOSE</h4>
+          <p>
+            After undergoing the <br />
+            last three processes, <br />
+            the waste are then <br />
+            disposed
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="latest-section">
+      <div class="latest-container">
+        <div class="latest-left">
+          <h4>What’s happening?....</h4>
+          <h2>
+            OUR LATEST NEWS <br />
+            AND ARTICLES
+          </h2>
+          <p>
+            Go through our news section to <br />
+            find out about our latest news <br />
+            and articles
+          </p>
+        </div>
+
+        <div class="latest-right">
+          <div class="latest-card">
+            <img
+              src="/Project_pages/images/latest/latest-cart-1.jpeg"
+              alt="Latest News"
+            />
+            <div class="lcard-body">
+              <h5>WASTE MANAGEMENT CONTAINERS / BINS FOR MY HOME</h5>
+            </div>
+          </div>
+          <div class="latest-card">
+            <img
+              src="/Project_pages/images/latest/latest-cart-2.jpeg"
+              alt="Latest News"
+            />
+            <div class="lcard-body">
+              <h5>LEVERAGE AGILE FRAMEWORKS TO PROVIDE BEST SERVICES</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="footer-section">
+      <div class="footer-container">
+        <div class="f1-content">
+          <h4>Stay Connected</h4>
+          <p>
+            Subscribe to our newsletter to join over 1,500 <br />
+            persons who receive updates about our offers and <br />
+            changes in policy. You can unsubscribe anytime!
+          </p>
+
+          <form>
+            <input type="email" placeholder="example@domain.com" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="f2-content">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="/Project_pages/aboutus.html">About</a></li>
+            <li><a href="#">Recent Projects</a></li>
+            <li>
+              <a href="/Project_pages/schedule-pickup.html">Request Pickup</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="f3-content">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-instagram socials"></i>Instagram</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-x-twitter socials"></i>Twitter</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-linkedin-in socials"></i>LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-facebook-f socials"></i>Facebook</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-regular fa-envelope socials"></i>Email</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="/Project_pages/Js/landingUpdated.js"></script>
+  </body>
+</html>

@@ -1,0 +1,417 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none !important;
+  list-style: none !important;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 70px !important;
+  background-color: #fff;
+  z-index: 999;
+
+  /* make the header to stick to top */
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+#header .logo {
+  font-size: 40px !important;
+  color: #000;
+  font-weight: 600;
+}
+
+#navlink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#navlink li {
+  list-style: none !important;
+  padding: 0 1rem !important;
+  position: relative !important;
+  font-size: 20px !important;
+  color: #000;
+}
+
+#navlink li a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+#navlink li a:hover,
+#navlink li a.active {
+  color: #17a100;
+  transition: color 0.3s ease;
+  border-bottom: 3px solid #17a100;
+}
+
+.noti-bar a {
+  cursor: pointer;
+}
+
+.noti-bar a i {
+  position: relative;
+  font-size: 24px;
+}
+
+.cart-count {
+  position: absolute;
+  top: 25%;
+  right: 9.5%;
+  background-color: #ff2e2efc;
+  color: #fff;
+  font-size: 14px;
+  padding: 1px 7px !important;
+  border-radius: 50% !important;
+  border: 2px solid #fff;
+  cursor: pointer;
+}
+
+.profile-bar a i {
+  font-size: 24px !important;
+}
+
+#last-bar {
+  display: flex;
+  align-items: center;
+  gap: 2rem !important;
+}
+
+#last-bar a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 20px !important;
+}
+
+#mobile {
+  display: none;
+  align-items: center;
+}
+
+#navbar {
+  display: none;
+}
+
+.cart-count {
+  top: 25%;
+  right: 9.5%;
+}
+
+.btn-success {
+  background-color: #17a100 !important;
+  width: 100% !important;
+  padding: 12px 0 !important;
+  font-size: 24px !important;
+  font-weight: 500 !important;
+}
+
+.paragraph {
+  margin-top: 10px !important;
+}
+
+.sm-container {
+  width: 100% !important;
+  gap: 10px !important;
+}
+
+.pd-l {
+  padding-left: 0 !important;
+}
+
+.fields {
+  width: 100% !important;
+  padding: 12px 10px !important;
+}
+
+.lb-sec {
+  margin-left: 55px !important;
+}
+
+.lg-m {
+  margin-left: 55px !important;
+}
+
+.f-l {
+  margin-bottom: 10px !important;
+}
+
+@media (max-width: 1024px) {
+  .cart-count {
+    top: 28%;
+    right: 13.7%;
+  }
+
+  .btn-success {
+    background-color: #17a100 !important;
+    width: 100% !important;
+    padding: 12px 0 !important;
+    font-size: 24px !important;
+    font-weight: 500 !important;
+  }
+
+  .paragraph {
+    margin-top: 10px !important;
+  }
+
+  .sm-container {
+    width: 100% !important;
+    gap: 10px !important;
+  }
+
+  .pd-l {
+    padding-left: 0 !important;
+  }
+
+  .fields {
+    width: 100% !important;
+    padding: 12px 10px !important;
+  }
+
+  .lb-sec {
+    margin-left: 55px !important;
+  }
+
+  .lg-m {
+    margin-left: 55px !important;
+  }
+
+  .f-l {
+    margin-bottom: 10px !important;
+  }
+}
+
+/* Navbar for Mobiles */
+@media (max-width: 768px) {
+  #header {
+    padding: 50px 30px !important;
+  }
+
+  #header {
+    padding: 20px 30px !important;
+  }
+
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px;
+    height: 100vh !important;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.08);
+    padding: 20px 0 0 20px !important;
+    transition: 0.2s !important;
+  }
+
+  #navbar .heading {
+    font-size: 32px !important;
+    margin-bottom: 10px !important;
+    color: #1a1a1a !important;
+  }
+
+  #navbar span {
+    color: #1a1a1a;
+    font-size: 24px !important;
+    margin-right: 140px !important;
+    font-weight: 600 !important;
+  }
+
+  #navbar li a .closed {
+    font-size: 30px !important;
+    font-weight: 600 !important;
+  }
+
+  #navbar i {
+    font-size: 50px !important;
+    color: #1a1a1a;
+    transition: 0.2s;
+  }
+
+  #navbar hr {
+    width: 95%;
+    margin-bottom: 30px !important;
+    border: 1px solid #383838 !important;
+    opacity: 1;
+  }
+
+  #navbar li a {
+    color: #1a1a1a;
+    font-size: 18px !important;
+    transition: 0.2s;
+  }
+
+  #navbar li a i {
+    margin-right: 15px !important;
+    font-size: 18px !important;
+    color: #1a1a1a;
+  }
+
+  #navbar.active {
+    right: 0;
+  }
+
+  #navbar li {
+    margin-bottom: 35px !important;
+  }
+
+  #navbar .loggout {
+    color: #ff0000 !important;
+  }
+
+  #mobile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  #mobile i {
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  #last-bar {
+    display: none;
+  }
+
+  .noShow-nav {
+    display: none !important;
+  }
+}
+
+/* ==================
+    Payment-Page
+   =================== */
+form {
+  max-width: 80%;
+}
+form.options {
+  border: none;
+}
+
+.form-check-input:checked {
+  background-color: #17a100;
+  border-color: #17a100;
+}
+
+input[type="radio"] {
+  border-color: #17a100;
+  margin-right: 10px;
+}
+
+.card {
+  width: 100%;
+  max-width: 35rem;
+}
+
+.bill-summary {
+  font-size: 12px;
+}
+
+.bill-item img {
+  width: 14px;
+  margin-bottom: 3px;
+  margin-right: 6px;
+}
+
+.bill-total img {
+  width: 14px;
+  margin-bottom: 3px;
+  margin-right: 6px;
+}
+
+.payment-options-cart {
+  margin-top: 60px;
+}
+.payment-options-pickup {
+  margin-top: 100px;
+}
+
+#cardNumber {
+  position: relative;
+}
+
+.cardNumber img {
+  width: 40px;
+  position: absolute;
+  top: 303px;
+  left: 340px;
+}
+
+@media (max-width: 776px) {
+  .payment-options img {
+    width: 200px;
+  }
+}
+
+/* POPUP STYLING */
+
+#blurContainer {
+  position: relative;
+  height: 100vh;
+}
+
+.blur-container.active {
+  filter: blur(5px);
+  pointer-events: none;
+  user-select: none;
+}
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px 55px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  display: none;
+}
+
+.tick-circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 80%;
+  border-color: #17a100;
+  border-style: solid;
+  font-weight: lighter;
+  text-align: center;
+  position: relative;
+}
+
+.fa-check {
+  color: #17a100;
+  font-size: 40px;
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.popup-content {
+  text-align: center;
+}
+
+/* PickupPage */
+#card-detailsPickUp,
+#bank-detailsPickUp,
+#cash-detailsPickUp {
+  max-width: 80%;
+  margin-left: 158px;
+}

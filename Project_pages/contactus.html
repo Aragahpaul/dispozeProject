@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StudyNow</title>
+
+    <!-- BOOTSTRAP - CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- AOS LIBRARY -->
+    <link rel="stylesheet" href="bower_components/aos/dist/aos.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- LOGIN CSS -->
+    <link rel="stylesheet" href="../Project_pages/css/contactus.css" />
+  </head>
+
+  <body>
+    <section id="header">
+      <a href="#" class="logo">Dispoze</a>
+
+      <div>
+        <ul id="navlink" class="noShow-nav">
+          <li><a href="../Project_pages/home.html">Home</a></li>
+          <li><a href="../Project_pages/shop/container.html">Shop</a></li>
+          <li><a href="../Project_pages/aboutus.html">About Us</a></li>
+          <li>
+            <a href="../Project_pages/contact.html " class="active"
+              >Contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <ul id="navbar">
+          <li class="heading">
+            <span>Dispoze</span
+            ><a href="#" id="close"><i class="fa-solid fa-xmark closed"></i></a>
+          </li>
+          <hr />
+          <li>
+            <a href="../Project_pages/home.html"
+              ><i class="bx bx-home-alt"></i>Home</a
+            >
+          </li>
+          <li>
+            <a href="../Project_pages/profile.html"
+              ><i class="bx bx-user-circle"></i>Profile</a
+            >
+          </li>
+          <li>
+            <a href="../Project_pages/shop/container.html"
+              ><i class="bx bx-store"></i>Shop</a
+            >
+          </li>
+          <li>
+            <a href="#" class="show-notification-modal-mobile"
+              ><i class="bx bx-bell"></i>Notification</a
+            >
+          </li>
+          <li>
+            <a href="../Project_pages/aboutus.html"
+              ><i class="bx bx-group"></i>About Us</a
+            >
+          </li>
+          <li>
+            <a href="../Project_pages/contact.html"
+              ><i class="bx bx-chat"></i>Contact Us</a
+            >
+          </li>
+          <li>
+            <a href="../Project_pages/login.html" class="log-mobile"
+              ><i class="bx bx-log-out log-mobile"></i>Logout</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div id="last-bar">
+        <div class="noti-bar">
+          <a href="#"
+            ><i class="fa-regular fa-bell" id="show-notification-modal"></i
+          ></a>
+          <div class="cart-count">3</div>
+        </div>
+        <div class="profile-bar">
+          <a href="#" class="profile-icon" id="dropdownButton"
+            ><i class="bx bx-user-circle prof"></i
+          ></a>
+          <a href="#"><i class="fa-solid fa-chevron-down chev"></i></a>
+          <div class="dropdown-menu" id="dropdownMenu">
+            <a
+              href="../Project_pages/profile.html"
+              class="dropdown-item adjust"
+            >
+              <i class="bx bx-user-circle pop-prof"></i>My Profile</a
+            >
+            <hr />
+            <a
+              href="../Project_pages/login.html"
+              class="dropdown-item logout adjust"
+              ><i class="bx bx-log-out pop-prof logout-icon"></i>Logout</a
+            >
+          </div>
+        </div>
+      </div>
+      <div id="mobile">
+        <i id="bar" class="fa-solid fa-bars"></i>
+      </div>
+    </section>
+    <!-- <section id="header">
+      <a href="#" class="logo">Dispoze</a>
+
+      <div>
+        <ul id="navlink" class="noShow-nav">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/Project_pages/shop/container.html">Shop</a></li>
+          <li><a href="/Project_pages/aboutus.html">About Us</a></li>
+          <li>
+            <a href="/Project_pages/contactus.html" class="active"
+              >contact Us</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <ul id="navbar">
+          <li class="heading">
+            <span>Dispoze</span
+            ><a href="#" id="close"><i class="fa-solid fa-xmark closed"></i></a>
+          </li>
+          <hr />
+          <li>
+            <a href="#"><i class="bx bx-home-alt"></i>Home</a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bx-user-circle"></i>Profile</a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bx-store"></i>Shop</a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bx-bell"></i>Notification</a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bx-group"></i>About Us</a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bx-chat"></i>Contact Us</a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bx-log-out"></i>Login</a>
+          </li>
+          <li>
+            <a href="#"><i class="bx bx-user-plus"></i>Sign Up</a>
+          </li>
+        </ul>
+      </div>
+      <div id="last-bar">
+        <div class="noti-bar">
+          <a href="#"><i class="fa-regular fa-bell"></i></a>
+          <div class="cart-count">3</div>
+        </div>
+        <div class="profile-bar">
+          <a href=""><i class="bx bx-user-circle"></i></a>
+          <a href="#"><i class="fa-solid fa-chevron-down"></i></a>
+        </div>
+      </div>
+      <div id="mobile">
+        <i id="bar" class="fa-solid fa-bars"></i>
+      </div>
+    </section> -->
+    <div>
+      <div class="container">
+        <div class="content">
+          <div class="left-side">
+            <div class="address details">
+              <i class="fas fa-map-marker-alt"></i>
+              <div class="topic">Address</div>
+              <div class="text-one">kodecamp 4.0</div>
+              <div class="text-two">example adress</div>
+            </div>
+            <div class="phone details">
+              <i class="fas fa-phone-alt"></i>
+              <div class="topic">Phone</div>
+              <div class="text-one">+234 9893 5647</div>
+            </div>
+            <div class="email details">
+              <i class="fas fa-envelope"></i>
+              <div class="topic">Email</div>
+              <div class="text-one">dispoze@gmail.com</div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="topic-text">Contact us</div>
+            <form action="#">
+              <div class="input-box">
+                <input type="text" placeholder="Enter your name" />
+              </div>
+              <div class="input-box">
+                <input type="text" placeholder="Enter your email" />
+              </div>
+              <div class="input-box message-box">
+                <input type="text" placeholder="Enter your message" />
+              </div>
+              <div class="button">
+                <input type="button" value="Send Now" />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="footer-section">
+      <div class="footer-container">
+        <div class="f1-content">
+          <h4>Stay Connected</h4>
+          <p>
+            Subscribe to our newsletter to join over 1,500 <br />
+            persons who receive updates about our offers and <br />
+            changes in policy. You can unsubscribe anytime!
+          </p>
+
+          <form>
+            <input type="email" placeholder="example@domain.com" required />
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+        <div class="f2-content">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Recent Projects</a></li>
+            <li><a href="#">Request Pickup</a></li>
+          </ul>
+        </div>
+
+        <div class="f3-content">
+          <h4>Contact Us</h4>
+          <ul>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-instagram socials"></i>Instagram</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-x-twitter socials"></i>Twitter</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-linkedin-in socials"></i>LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-brands fa-facebook-f socials"></i>Facebook</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><i class="fa-regular fa-envelope socials"></i>Email</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="/Project_pages/Js/contactus.js"></script>
+  </body>
+</html>

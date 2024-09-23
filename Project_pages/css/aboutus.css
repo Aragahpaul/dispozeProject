@@ -1,0 +1,576 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header Styles */
+.header {
+  background-color: #fff;
+  z-index: 999;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  width: 100% !important;
+}
+
+/* Grid Layout for the Navbar */
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000;
+  margin-left: -7rem !important;
+  /* Adjust as needed */
+  justify-self: start;
+}
+
+.mx-auto {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-right: 100rem;
+  padding: 0;
+}
+
+.ml-auto {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  margin: -7rem;
+  padding: 0;
+}
+
+.nav-link {
+  color: #000 !important;
+  font-weight: 500;
+  margin-right: 15px;
+  padding: 0 !important;
+}
+
+.pad-login {
+  padding: 8px !important;
+}
+
+.nav-link.text-success {
+  color: #28a745 !important;
+}
+
+.nav-link:hover {
+  color: #28a745 !important;
+  border-bottom: 3px solid #17a100 !important;
+}
+
+.btn-success {
+  font-weight: 500;
+  margin-left: 10px;
+}
+
+.nav-link.active {
+  color: #17a100 !important;
+  border-bottom: 3px solid #17a100 !important;
+  padding: 0 !important;
+}
+
+#mobile {
+  display: none !important;
+  align-items: center !important;
+}
+
+#navbar {
+  display: none !important;
+}
+/* Our Services */
+.story h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -1.1%;
+  margin: 0;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+/* Introduction */
+main {
+  padding: 20px 70px !important;
+}
+
+.introduction p {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.1%;
+  margin-bottom: 50px;
+}
+
+.we-are h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -1.1%;
+  text-align: center;
+  color: #000;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* Image Styles */
+.images {
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  align-items: center;
+}
+
+.images img {
+  width: 200px;
+  height: 200px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* Our Service */
+.our-services h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -1.1%;
+  text-align: center;
+  color: #000;
+  margin-top: 40px;
+}
+
+.our-services ul {
+  list-style: block !important;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 48px;
+  letter-spacing: -1.1%;
+  list-style-type: disc !important;
+  padding-left: 20px;
+}
+
+/* Footer Section */
+#footer-section {
+  padding: 50px 70px !important;
+  background-color: #dbedd9dd;
+  list-style: none !important;
+}
+
+#footer-section h4 {
+  font-size: 30px !important;
+  font-weight: 600;
+  color: #1f1f1f;
+  margin-bottom: 20px !important;
+}
+
+#footer-section li a:hover {
+  color: #1b7c0c;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+#footer-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+#footer-section ul li {
+  margin-bottom: 15px !important;
+}
+
+#footer-section ul li a {
+  color: #1f1f1f;
+  text-decoration: none;
+}
+
+.f1-content p {
+  font-size: 16px !important;
+  color: #1f1f1f;
+  margin-bottom: 20px !important;
+}
+
+.f1-content form {
+  display: flex;
+}
+
+.f1-content form input[type="text"],
+.f1-content form input[type="email"] {
+  width: 70% !important;
+  padding: 10px !important;
+  border: 2px solid #ccc;
+  border-top-left-radius: 7px !important;
+  border-bottom-left-radius: 7px !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.f1-content input::placeholder {
+  font-size: 16px !important;
+}
+
+.f1-content form button {
+  width: 30% !important;
+  padding: 10px 20px !important;
+  border-top-right-radius: 7px !important;
+  border-bottom-right-radius: 7px !important;
+  background-color: #17a100;
+  color: #fff;
+  border: none;
+  transition: 0.2s linear;
+  font-size: 16px !important;
+}
+
+.f1-content form button:hover {
+  background-color: #1c9300;
+}
+
+.f2-content ul li,
+.f3-content ul li {
+  font-size: 16px !important;
+  margin-bottom: 15px !important;
+}
+
+.f2-content ul li a,
+.f3-content ul li a {
+  color: #1f1f1f;
+}
+
+.socials {
+  margin-right: 20px !important;
+  color: #17a100;
+  font-size: 25px !important;
+}
+
+/* Media Queries */
+
+/* Media Query for Tablets */
+@media (max-width: 1024px) {
+  .navbar-brand {
+    margin-left: 1rem !important;
+  }
+  .ml-auto {
+    margin: 1rem !important;
+  }
+
+  #footer-section {
+    padding: 50px 100px !important;
+  }
+
+  .footer-container {
+    gap: 40px !important;
+  }
+
+  #footer-section h4 {
+    font-size: 24px !important;
+  }
+
+  .f1-content p {
+    font-size: 16px !important;
+  }
+
+  .f1-content form input[type="text"],
+  .f1-content form input[type="email"] {
+    width: 60% !important;
+  }
+
+  .f1-content form button {
+    width: 30% !important;
+    padding: 8px 18px !important;
+  }
+}
+
+/* Media Query for Small and Medium Screens */
+@media (max-width: 768px) {
+  #navbar {
+    display: flex !important;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -350px;
+    height: 100vh !important;
+    width: 300px;
+    background-color: #fff;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.08);
+    padding: 20px 0 0 20px !important;
+    transition: 0.2s !important;
+    list-style: none !important;
+  }
+  #navbar .heading {
+    font-size: 32px !important;
+    margin-bottom: 1px !important;
+    color: #1a1a1a !important;
+  }
+
+  #navbar span {
+    color: #1a1a1a;
+    font-size: 24px !important;
+    margin-right: 120px !important;
+    font-weight: 600 !important;
+  }
+
+  #navbar li a .closed {
+    font-size: 30px !important;
+    font-weight: 600 !important;
+  }
+
+  #navbar i {
+    font-size: 50px !important;
+    color: #1a1a1a;
+    transition: 0.2s;
+  }
+
+  #navbar hr {
+    width: 85%;
+    margin-bottom: 30px !important;
+    border: 1px solid #383838 !important;
+    opacity: 1;
+  }
+
+  #navbar li a {
+    color: #1a1a1a;
+    font-size: 18px !important;
+    transition: 0.2s;
+  }
+
+  #navbar li a i {
+    margin-right: 15px !important;
+    font-size: 18px !important;
+    color: #1a1a1a;
+  }
+
+  #navbar.active {
+    right: 0;
+  }
+
+  #navbar li {
+    margin-bottom: 35px !important;
+  }
+
+  #navbar .log-mobile {
+    color: #ff0000 !important;
+  }
+
+  #mobile {
+    display: flex !important;
+    align-items: center;
+    justify-content: flex-end;
+    cursor: pointer;
+  }
+
+  #mobile i {
+    color: #1a1a1a;
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  #last-bar {
+    display: none;
+  }
+
+  .noShow-nav {
+    display: none !important;
+  }
+
+  .navbar {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    margin-left: -2rem; /* Adjust as needed */
+  }
+
+  .nav-link {
+    margin-right: 0;
+    padding: 10px 0;
+    color: #000 !important; /* Ensure all nav links have the same color */
+  }
+  .nav-link.active {
+    color: #1f1f1f !important; /* Same color as "Contact Us" */
+    text-decoration: none !important;
+    font-weight: normal;
+  }
+  #login {
+    color: #1f1f1f !important;
+  }
+
+  .Dontshow {
+    display: none;
+  }
+
+  .btn-success {
+    display: none;
+  }
+
+  .introduction p {
+    text-align: center;
+  }
+
+  #footer-section {
+    padding: 50px 30px !important;
+  }
+
+  .footer-container {
+    gap: 30px !important;
+  }
+
+  #footer-section h4 {
+    font-size: 20px !important;
+  }
+
+  .f1-content p {
+    font-size: 14px !important;
+  }
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 584px) {
+  .story h1 {
+    font-size: 42px;
+
+    margin-bottom: 10px;
+  }
+  .images {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .img-1,
+  .img-2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img-1 h2 {
+    margin-top: 20px;
+  }
+  .img-2 h2 {
+    margin-top: 20px;
+  }
+
+  .our-services h1 {
+    font-size: 32px;
+  }
+
+  .we-are h1 {
+    font-size: 32px;
+  }
+  .footer-container {
+    gap: 30px !important;
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .f1-content form {
+    display: flex;
+    flex-direction: column !important;
+    gap: 10px !important;
+    justify-content: center;
+    align-items: center;
+  }
+  .f1-content {
+    text-align: center;
+  }
+  .f1-content br {
+    display: none;
+  }
+  .f2-content {
+    padding-left: 0 !important;
+  }
+  .f1-content,
+  .f2-content,
+  .f3-content {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    flex-direction: column !important;
+  }
+
+  ol,
+  ul {
+    padding-left: 0 !important;
+  }
+
+  .f1-content form input[type="text"],
+  .f1-content form input[type="email"] {
+    width: 100% !important;
+    border-top-right-radius: 7px !important;
+    border-bottom-right-radius: 7px !important;
+  }
+
+  .f1-content form button {
+    width: 30% !important;
+    padding: 8px 18px !important;
+  }
+
+  .f1-content form button {
+    width: 100% !important;
+    padding: 8px 18px !important;
+    border-top-left-radius: 7px !important;
+    border-bottom-left-radius: 7px !important;
+  }
+}
+
+/* Ensuring "About Us" and "Login" have the same color on mobile screens */
+@media (max-width: 425px) {
+  .navbar {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .nav-link {
+    color: #1f1f1f !important; /* Set the same color as "Contact Us" */
+  }
+
+  .nav-link.active {
+    color: #1f1f1f !important; /* Same color as "Contact Us" */
+    text-decoration: none !important;
+    font-weight: normal;
+  }
+  #login {
+    color: #1f1f1f !important;
+  }
+
+  .btn-success {
+    display: none;
+  }
+
+  .images img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .story h1 {
+    margin-bottom: 0;
+    text-align: center;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
